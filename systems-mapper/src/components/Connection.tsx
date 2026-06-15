@@ -185,7 +185,9 @@ export const Connection: React.FC<ConnectionProps> = ({
           id={`path-${connection.id}`}
           className={`connection-path ${isSelected ? 'selected' : ''}`}
           d={path}
+          fill="none"
           stroke={isSelected ? '#4f46e5' : '#94a3b8'}
+          strokeWidth={isSelected ? '6.5' : '4.5'}
           strokeDasharray={connection.style === 'dashed' ? '4,12' : undefined}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -213,15 +215,11 @@ export const Connection: React.FC<ConnectionProps> = ({
               refY="5"
               markerWidth="6"
               markerHeight="6"
-              orient="auto-start-reverse"
+              orient="auto"
             >
               <path 
                 d="M 1.5 2.5 L 7 5 L 1.5 7.5 Z" 
                 fill={isSelected ? '#4f46e5' : '#94a3b8'} 
-                stroke={isSelected ? '#4f46e5' : '#94a3b8'} 
-                strokeWidth="1.5" 
-                strokeLinejoin="round" 
-                strokeLinecap="round"
               />
             </marker>
           </defs>
@@ -234,6 +232,7 @@ export const Connection: React.FC<ConnectionProps> = ({
         style={{
           left: `${midX}px`,
           top: `${midY}px`,
+          fontFamily: "'Inter', sans-serif",
         }}
         onDoubleClick={(e) => {
           e.stopPropagation();

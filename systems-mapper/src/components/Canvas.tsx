@@ -248,15 +248,11 @@ export const Canvas: React.FC<CanvasProps> = ({
               refY="5"
               markerWidth="6"
               markerHeight="6"
-              orient="auto-start-reverse"
+              orient="auto"
             >
               <path 
                 d="M 1.5 2.5 L 7 5 L 1.5 7.5 Z" 
                 fill="#94a3b8" 
-                stroke="#94a3b8" 
-                strokeWidth="1.5" 
-                strokeLinejoin="round" 
-                strokeLinecap="round"
               />
             </marker>
             <marker
@@ -266,15 +262,11 @@ export const Canvas: React.FC<CanvasProps> = ({
               refY="5"
               markerWidth="6"
               markerHeight="6"
-              orient="auto-start-reverse"
+              orient="auto"
             >
               <path 
                 d="M 1.5 2.5 L 7 5 L 1.5 7.5 Z" 
                 fill="#4f46e5" 
-                stroke="#4f46e5" 
-                strokeWidth="1.5" 
-                strokeLinejoin="round" 
-                strokeLinecap="round"
               />
             </marker>
           </defs>
